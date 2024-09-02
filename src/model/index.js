@@ -9,7 +9,7 @@ const prototypeSchema = new mongoose.Schema({
     required: true,
     type: Object,
   },
-  fileUrlData: {
+  fileUrlList: {
     required: true,
     type: Array,
   },

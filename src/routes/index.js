@@ -11,7 +11,7 @@ const { uploadFile } = require("./upload");
 router.post("/post", async (req, res) => {
   const data = new Model({
     bom: req.body.bom,
-    fileUrlData: req.body.fileUrlData,
+    fileUrlList: req.body.fileUrlList,
     name: req.body.name,
     createdOn: req.body.createdOn,
   });

@@ -11,7 +11,6 @@ const credentials = {
 };
 
 const options = {
-  keyPrefix: "uploads/",
   bucket: "trip-slips",
   region: "ap-south-1",
   link: "https://trip-slips.s3.ap-south-1.amazonaws.com/tmp/",
