@@ -61,7 +61,7 @@ Follow the steps below to set up and run the project on your local machine:
    ```bash
    npm run dev
    ```
-   The application will start on the port (e.g., 5849). You can access it by navigating to `http://localhost:5849` in your browser or using an API client like Postman.
+   The application will start on the default port (e.g., 3000). You can access it by navigating to `http://localhost:3000` in your browser or using an API client like Postman.
 
 ### Contributing
 

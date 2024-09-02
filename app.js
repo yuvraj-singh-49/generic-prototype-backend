@@ -28,8 +28,8 @@ app.use(express.urlencoded({extended: true}))
 
 app.use("/api", routes);
 
-app.listen(5849, () => {
-  console.log(`Server Started at 5849`);
+app.listen(3000, () => {
+  console.log(`Server Started at 3000`);
 });
 
 module.exports = app;
