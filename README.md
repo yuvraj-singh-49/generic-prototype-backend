@@ -15,7 +15,7 @@ This repository is built using Node.js and handles the backend for the CAD desig
 
 ## Deployment
 
-The backend is deployed on Amazon AWS Lambda, utilizing the serverless architecture to automatically scale with demand, minimize operational costs, and eliminate the need for managing infrastructure. This approach ensures that the backend services are highly available, reliable, and capable of handling variable workloads efficiently.
+This backend backend is deployed on Amazon AWS Beanstalk and CI/CD is served through AWS Code Pipeline.
 
 ### Getting Started
 
@@ -62,20 +62,6 @@ Follow the steps below to set up and run the project on your local machine:
    npm run dev
    ```
    The application will start on the port (e.g., 5849). You can access it by navigating to `http://localhost:5849` in your browser or using an API client like Postman.
-
-### Deployment
-
-To deploy the backend on AWS Lambda:
-
-1. **Install the Serverless Framework**:
-   ```bash
-   npm install -g serverless
-   ```
-
-2. **Deploy the application**:
-   ```bash
-   serverless deploy
-   ```
 
 ### Contributing
 
