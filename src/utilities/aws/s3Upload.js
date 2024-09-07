@@ -13,7 +13,7 @@ const credentials = {
 const options = {
   bucket: "trip-slips",
   region: "ap-south-1",
-  link: "https://trip-slips.s3.ap-south-1.amazonaws.com/tmp/",
+  link: "https://trip-slips.s3.ap-south-1.amazonaws.com/",
   successActionStatus: 201,
 };
 
@@ -29,7 +29,7 @@ const s3Upload = async (fileData) => {
     const file = {
       name: `${filename}.${fileType}`,
       type: mimetype,
-      key: `tmp/${filename}.${fileType}`,
+      key: `tmp/${originalname}`,
     };
 
     const fileContent = fs.readFileSync(path);
@@ -46,7 +46,7 @@ const s3Upload = async (fileData) => {
         return {
           success: true,
           key: file.key,
-          s3Link: `${options.link}${file.name}`,
+          s3Link: `${options.link}${file.key}`,
         };
       })
       .catch((error) => {
